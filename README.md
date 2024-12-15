@@ -81,51 +81,56 @@ This is a simple FastAPI application that provides CRUD operations for a healthc
 
 ## Endpoints
 
-### Pacientes
+### Produtos
 
-- **GET /pacientes**: Lista todos os pacientes.
-- **POST /pacientes**: Cria um novo paciente.
-- **PUT /pacientes/{paciente_id}**: Atualiza um paciente existente.
-- **DELETE /pacientes/{paciente_id}**: Deleta um paciente.
+- **GET /produtos/**: Lista todos os produtos.
+- **POST /produtos/**: Cria um novo produto.
+- **PUT /produtos/{produto_id}**: Atualiza um produto existente.
+- **DELETE /produtos/{produto_id}**: Deleta um produto do estoque.
 
-### Médicos
+### Clientes
 
-- **GET /medicos**: Lista todos os médicos.
-- **POST /medicos**: Cria um novo médico.
-- **PUT /medicos/{medico_id}**: Atualiza um médico existente.
-- **DELETE /medicos/{medico_id}**: Deleta um médico.
+- **GET /clientes/**: Lista todos os clientes.
+- **POST /medicos**: Cadastra um novo cliente.
+- **PUT /clientes/{cliente_id}**: Atualiza um cliente existente.
+- **DELETE /clientes/{cliente_id}**: Deleta um cliente.
 
-### Consultas
+### Pedidos
 
-- **GET /consultas**: Lista todas as consultas.
-- **POST /consultas**: Cria uma nova consulta.
-- **PUT /consultas/{consulta_id}**: Atualiza uma consulta existente.
-- **DELETE /consultas/{consulta_id}**: Deleta uma consulta.
+- **GET /pedidos/**: Lista todos os pedidos.
+- **POST /pedidos/**: Cria um novo pedido.
+- **PUT /pedidos/{pedido_id}**: Atualiza um pedido existente.
+- **DELETE /pedidos/{pedido_id}**: Deleta um cliente.
 
 ---
 
 ## Modelos de Dados
 
-### Paciente
+### Produto
 
 - **nome**: String
-- **idade**: Inteiro
-- **historico_medico**: String
+- **descricao**: Inteiro
+- **preco**: float
+- **estoque**: int
+- **dosponivel**: String
 
-### Médico
+### Cliente
 
 - **nome**: String
-- **especialidade**: String
+- **email**: String
+- **telefone**: String
+- **endereco**: String
 
-### Consulta
+### Pedido
 
-- **paciente_id**: Inteiro (referência a `Paciente`)
-- **medico_id**: Inteiro (referência a `Medico`)
-- **data**: String
-- **hora**: String
+- **id**: int
+- **cliente_id**: Inteiro (referência a `Cliente`)
+- **cliente_id**: Inteiro (referência a `Produto`)
+- **data_pedido**: dateTime
+- **status**: String
 
 ---
 
 ### Requisições
 
-- para testar as requisições do projeto utilize o **Postman** e abra o arquivo **Consultas Medicas.postman_collection.json**.
+- para testar as requisições do projeto utilize o **Postman** e abra o arquivo **(ainda p colocar)**.
