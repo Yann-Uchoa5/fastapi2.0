@@ -1,6 +1,6 @@
 # FastAPI CRUD Operations
 
-This is a simple FastAPI application that provides CRUD operations for a healthcare management system involving Patients, Doctors, and Appointments. The backend is powered by FastAPI, with SQLite as the database, and SQLAlchemy for ORM.
+This is a simple FastAPI application that provides CRUD operations for business management with Customer, Product, Orders and Appointments. The backend is powered by FastAPI, with SQLite as the database, and SQLAlchemy for ORM.
 
 ## Tecnologias Utilizadas
 
