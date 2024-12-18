@@ -133,4 +133,4 @@ This is a simple FastAPI application that provides CRUD operations for business 
 
 ### Requisições
 
-- para testar as requisições do projeto utilize o **Postman** e abra o arquivo **(ainda p colocar)**.
+- para testar as requisições do projeto utilize o **Postman** e abra o arquivo **(APi Gestão de Negócios.postman_collection.json)**.
