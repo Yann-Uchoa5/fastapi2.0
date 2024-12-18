@@ -11,6 +11,7 @@ class Produto(Base):
     descricao = Column(String, nullable=True)
     preco = Column(Float, nullable=False)
     estoque = Column(Integer, nullable=False)
+    disponivel = Column(String, nullable=True)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=func.now())
     updated_at = Column(TIMESTAMP(timezone=True), default=None, onupdate=func.now())
 

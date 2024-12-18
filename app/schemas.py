@@ -8,7 +8,8 @@ class ProdutoCreate(BaseModel):
     descricao: Optional[str] = None
     preco: float
     estoque: int
-
+    disponivel: str
+    
     class Config:
         from_attributes = True  
 
@@ -23,6 +24,7 @@ class ProdutoUpdate(BaseModel):
     descricao: Optional[str]
     preco: Optional[float]
     estoque: Optional[int]
+    disponivel: Optional[str]
 
     class Config:
         from_attributes = True

@@ -1,5 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException # type: ignore
-from sqlalchemy.orm import Session # type: ignore
+from fastapi import APIRouter, Depends, HTTPException 
+from sqlalchemy.orm import Session
 from app import models, schemas
 from app.database import SessionLocal
 
@@ -21,6 +21,7 @@ def create_produto(produto: schemas.ProdutoCreate, db: Session = Depends(get_db)
         descricao=produto.descricao,
         preco=produto.preco,
         disponivel=produto.disponivel
+
     )
     db.add(db_produto)
     db.commit()
